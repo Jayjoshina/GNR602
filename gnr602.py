@@ -97,7 +97,7 @@ st.write("Upload an image and compare Normal vs Multi-Scale Harris on High & Low
 
 uploaded_file = st.file_uploader("📤 Upload Image", type=["png", "jpg", "jpeg"])
 
-threshold = st.slider("🎯 Threshold", 0.05, 0.5, 0.25)
+threshold = 0.25
 
 if uploaded_file is not None:
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
